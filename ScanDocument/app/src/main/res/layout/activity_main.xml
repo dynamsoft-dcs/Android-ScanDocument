@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dynamsoft.scandocument.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textSize="18sp"
+            android:id="@+id/tv_title_id"
+            android:text="Scan document"
+            android:gravity="center"
+            android:background="#5EB7E4"
+            android:textColor="@android:color/white"
+            android:layout_alignParentTop="true"/>
+
+        <com.dynamsoft.camerasdk.view.DcsView
+            android:id="@+id/dcsview_id"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/tv_show_id"
+            android:layout_below="@+id/tv_title_id"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/tv_show_id"
+            android:text="show camera"
+            android:gravity="center"
+            android:background="#ff0f9d58"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
