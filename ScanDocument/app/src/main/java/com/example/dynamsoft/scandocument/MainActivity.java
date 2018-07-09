@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements DcsViewListener {
         dcsView.setListener(this);
 
         try {
-            dcsView.getVideoView().setMode(DcsVideoView.DME_DOCUMENT);
+            dcsView.getVideoView().setMode(DcsView.DME_DOCUMENT);
         } catch (DcsValueOutOfRangeException e) {
             e.printStackTrace();
         }
