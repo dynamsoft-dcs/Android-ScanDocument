@@ -23,11 +23,15 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    implementation(name: 'dynamsoftcamerasdk2.0.0', ext: 'aar')
+    implementation 'com.dynamsoft:dynamsoftcamerasdk:2.0@aar'
     implementation 'com.android.support:recyclerview-v7:26.1.0'
     implementation 'com.android.support:exifinterface:26.1.0'
 }
-
+repositories {
+    maven {
+         url "http://download.dynamsoft.com/maven/dcs"
+    }
+}
 repositories {
     flatDir { dirs 'libs' }
 }
